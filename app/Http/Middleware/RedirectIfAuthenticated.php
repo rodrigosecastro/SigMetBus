@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Middleware;
+namespace SigMetBus\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;

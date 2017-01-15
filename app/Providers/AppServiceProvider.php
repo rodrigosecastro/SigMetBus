@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace SigMetBus\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

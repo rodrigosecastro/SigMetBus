@@ -5,14 +5,14 @@
  * https://github.com/laravel/framework/blob/5.3/src/Illuminate/Auth/Console/stubs/make/controllers/HomeController.stub
  */
 
-namespace App\Http\Controllers;
+namespace SigMetBus\Http\Controllers;
 
-use App\Http\Requests;
+use SigMetBus\Http\Requests;
 use Illuminate\Http\Request;
 
 /**
  * Class HomeController
- * @package App\Http\Controllers
+ * @package SigMetBus\Http\Controllers
  */
 class HomeController extends Controller
 {

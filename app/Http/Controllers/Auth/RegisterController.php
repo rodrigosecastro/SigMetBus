@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace SigMetBus\Http\Controllers\Auth;
 
-use App\User;
+use SigMetBus\User;
 use Validator;
-use App\Http\Controllers\Controller;
+use SigMetBus\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
 /**

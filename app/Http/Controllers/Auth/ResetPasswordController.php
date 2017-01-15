@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace SigMetBus\Http\Controllers\Auth;
 
-use App\Http\Controllers\Controller;
+use SigMetBus\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 use Illuminate\Http\Request;
 
