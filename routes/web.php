@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return redirect('/login');
+    return redirect('login');
 });
 
 Route::group(['middleware' => 'auth'], function () {
