@@ -15,15 +15,19 @@ class CreateTrainingSessionsTable extends Migration
     {
         Schema::create('training_sessions', function (Blueprint $table) {
             $table->increments('id');
-            //$table->foreign('training_type_id')->references('id')->on('training_types')->nullable();
-            //$table->foreign('place_type_id')->references('id')->on('places_types')->nullable();
-            $table->timestamp('date_time');
+            $table->integer('training_type_id');
+            $table->integer('training_place_id');
+            $table->integer('session_stage_id');
+            $table->timestamp('scheduled_date_time');
             $table->integer('created_by')->default(1);
             $table->timestamps();
             $table->boolean('available')->default(true);
         });
 
         Schema::table('training_sessions', function (Blueprint $table) {
+            $table->foreign('training_type_id')->references('id')->on('training_types');
+            $table->foreign('training_place_id')->references('id')->on('training_places');
+            $table->foreign('session_stage_id')->references('id')->on('sessions_stages');
             $table->foreign('created_by')->references('id')->on('users');
         });
     }

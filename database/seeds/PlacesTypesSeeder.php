@@ -13,13 +13,15 @@ class PlacesTypesSeeder extends Seeder
     {
 
         DB::table('places_types')->insert([
-            'name' => 'En ruta',
+            'name' => '510',
             'created_at' => date('Y-m-d H:i:s')
         ]);
 
         DB::table('places_types')->insert([
-            'name' => 'Aula',
+            'name' => '612',
             'created_at' => date('Y-m-d H:i:s')
         ]);
+
+
     }
 }
