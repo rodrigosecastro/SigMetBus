@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return redirect('login');
+    return view('adminlte::auth/login');
 });
 
 Route::group(['middleware' => 'auth'], function () {
@@ -22,6 +22,8 @@ Route::group(['middleware' => 'auth'], function () {
 
     //Please do not remove this if you want adminlte:route and adminlte:link commands to works correctly.
     #adminlte_routes
+
+    Route::resource('/capacitaciones', 'TrainingSessionController@index');
 });
 
 //Route::resource('TrainingSession');

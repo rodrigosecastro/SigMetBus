@@ -3,6 +3,9 @@
 namespace SigMetBus\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use Illuminate\Validation\Validator;
+use SigMetBus\TrainingSession;
 
 class TrainingSessionController extends Controller
 {
@@ -13,7 +16,7 @@ class TrainingSessionController extends Controller
      */
     public function index()
     {
-        //
+        return view('adminlte::training_session.index');
     }
 
     /**
