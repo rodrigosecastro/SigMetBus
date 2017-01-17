@@ -16,7 +16,16 @@ class TrainingSessionController extends Controller
      */
     public function index()
     {
-        return view('adminlte::training_session.index');
+        $trainingSessions = TrainingSession::with([
+            'training_type',
+            'training_place',
+            'training_stage',
+            'user',
+        ])->first();
+
+        return view('adminlte::training_session.index', [
+            'trainingSessions' => $trainingSessions
+        ]);
     }
 
     /**

@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class TrainingSession extends Model
 {
-    protected $table = 'training_session';
+    protected $table = 'training_sessions';
 
     protected $fillable = [
         'training_type_id',
@@ -16,4 +16,9 @@ class TrainingSession extends Model
         'created_by',
         'available'
     ];
+
+    public function trainingTypes()
+    {
+        //return $this->belongsTo('SigMetBus\Models\')  ;
+    }
 }
