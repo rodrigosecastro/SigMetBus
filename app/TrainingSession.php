@@ -16,7 +16,7 @@ class TrainingSession extends Model
         'created_by',
         'available'
     ];
-
+//
     public function trainingTypes()
     {
         //return $this->belongsTo('SigMetBus\Models\')  ;
